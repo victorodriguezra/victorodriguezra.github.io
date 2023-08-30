@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Epilogue';
+  src: url(assets/epilogue/Epilogue-VariableFont_wght.ttf);
+}
+
 .navegador {
   display: flex;
   background-color: #5136AD;
@@ -16,7 +21,7 @@
 .navegador_flex_left {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 30px;
   justify-content: flex-start;
 }
 
@@ -26,6 +31,7 @@
     font-size: 12px;
     color: white;
     border: 0px;
+    text-overflow: hidden;
     line-height: normal;
     font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
 }
@@ -33,6 +39,7 @@
 .navegador_flex_buttons {
   display: flex;
   gap: 10px;
+  margin-right: 40px;
 }
 
 .navegador_flex_logo {
@@ -86,4 +93,45 @@
   background-color: #432D8C;
   border-radius: 200px;
   
+}
+
+.bar {
+  display: flex;
+  background-color: #1A1A1A;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+}
+
+.bar_items {
+  color: #8a8a9c;
+  text-decoration: none;
+  transition: color 0.4s;
+  font-size: 14px;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.bar_items:hover {
+  color: white;
+}
+
+.heading_resumen {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: Epilogue;
+  color: #fff;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.paragraph_resumen {
+  font-style: normal;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin-left: 50px;
+  font-size: 16px
 }
