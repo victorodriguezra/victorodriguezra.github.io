@@ -287,7 +287,13 @@
 
 @media screen and (max-width:700px) {
   .cards_grid {
-    grid-template-columns: repeat(1,1fr); 
+    grid-template-columns: repeat(1,1fr)!important; 
+  }
+}
+
+@media screen and (max-width:840px) {
+  .cards_grid {
+    grid-template-columns: repeat(2,1fr); 
   }
 }
 
@@ -377,7 +383,9 @@
   font-size: 24px;
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
   margin-top: 10px;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;  
 }
   
 .article_flex_text-2 {
@@ -387,6 +395,9 @@
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  white-space: nowrap;
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
 }
 
@@ -545,6 +556,8 @@
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .cards_grid-6 {
@@ -572,6 +585,7 @@
   color: white;
   margin-bottom: 10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 .article_flex_text-6 {
@@ -607,6 +621,7 @@
   color: white;
   margin-bottom: 10px;
   margin-top: -10px;
+  text-align: center;
 }
 
 .article_flex_text-7 {
