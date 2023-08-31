@@ -6,7 +6,7 @@
 .navegador {
   display: flex;
   background-color: #5136AD;
-  height: 64px;
+  
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -22,18 +22,24 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  justify-content: flex-start;
 }
 
 .navegador_flex_sections {
-    padding: 8px 16px;
     font-weight: 700;
     font-size: 12px;
     color: white;
     border: 0px;
-    text-overflow: hidden;
     line-height: normal;
     font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
 }
 
 .navegador_flex_buttons {
@@ -98,11 +104,9 @@
 .bar {
   display: flex;
   background-color: #1A1A1A;
-  height: 48px;
   align-items: center;
   justify-content: center;
   gap: 50px;
-
 }
 
 .bar_items {
@@ -112,6 +116,8 @@
   font-size: 14px;
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
   font-weight: 400;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .bar_items:hover {
@@ -133,5 +139,77 @@
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
   color: #fff;
   margin-left: 50px;
-  font-size: 16px
+  font-size: 16px;
+  margin-bottom: 30px;
 }
+
+.coursecard {
+  height: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-basis: 735px;
+  background-size: cover!important;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.coursecard_content{
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(0,0,0,.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  height: 100%;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.coursecard_content_header {
+  font-size: 18px;
+  color: white;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  margin: 0px;
+  margin-left: 30px;
+}
+
+.coursecard_content_web {
+  font-size: 32px;
+  color: white;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  margin: 0px;
+  margin-left: 30px;
+}
+
+.coursecard_content_stats {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.coursecard_content_stats_lecturas {
+  background-color: #14c7d0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coursecard_content_stats_cuestionarios {
+  background-color: #ba85ff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
