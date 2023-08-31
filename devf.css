@@ -130,7 +130,7 @@
   font-size: 48px;
   font-family: Epilogue;
   color: #fff;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-bottom: 15px;
 }
 
@@ -138,19 +138,16 @@
   font-style: normal;
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
   color: #fff;
-  margin-left: 50px;
+  margin-left: 100px;
   font-size: 16px;
   margin-bottom: 30px;
 }
 
 .coursecard {
-  height: 250px;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 220px;
   border-radius: 8px;
-  margin-left: 50px;
-  margin-right: 50px;
-  flex-basis: 735px;
+  margin-left: 100px;
+  margin-right:100px;
   background-size: cover!important;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -164,7 +161,7 @@
   border-radius: 8px;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   
 }
 
@@ -189,6 +186,7 @@
   flex-direction: row;
   margin-left: 30px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .coursecard_content_stats_lecturas {
@@ -213,3 +211,341 @@
   flex-direction: column;
 }
 
+.cards_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 110px;
+  margin-right: 110px;
+  gap: 20px;
+  justify-items: center;
+  column-gap: 60px;
+  row-gap: 30px;
+  margin-top: 50px;
+}
+
+.cards_grid-1 {
+  background-color: #0C0C0C;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 280px;
+}
+
+
+.article_card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.flex_article_header-1 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color:#fff;
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.flex_article_text-1 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color:#fff;
+  margin: 20px;
+}
+
+.flex_asistencia-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 6px 8px;
+  margin-left: 20px;
+  margin-right: 16px;
+  flex-wrap: wrap;
+}
+
+.flex_asistencia-fecha-1 {
+  background-color: #14c7d0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  width: 42px;
+  box-sizing: inherit;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+  text-align: center;
+}
+
+.cards_grid-2 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 280px;
+  background-size: cover!important;
+}
+
+
+.article_card-2 {
+  background: rgba(0,0,0,.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  margin: -11px;
+  height: 100%;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article_flex_header-2 {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+}
+  
+.article_flex_text-2 {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+}
+
+.cards_grid-3 {
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 280px;
+  background-image: url(/assets/bg-one.83364c95.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.article_flex_play-3 {
+  background-image: url(assets/download.png);
+  height: 60px;
+  width: 60px;
+  background-size: cover!important;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0px;
+  margin: 20px;
+}
+
+.article_flex_header-3 {
+  font-family: Epilogue;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0px;
+  margin: 20px;
+}
+
+.article_flex_text-3 {
+  font-family: Epilogue;
+  color: white;
+  font-weight: 700;
+  font-size: .75rem;
+  margin: 20px;
+  
+}
+
+.cards_grid-4 {
+  background-color: #0C0C0C;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 280px;
+}
+
+.article_card-4 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.article_card_yaxche-4 {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.article_flex_yaxche_image-4{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.article_flex_yaxche_header-4 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.article_flex_yaxche_text-4 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  margin-top: 0px;
+}
+
+.article_card_felipe-4 {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.article_flex_felipe_image-4{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.article_flex_felipe_header-4 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.article_flex_felipe_text-4 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  margin-top: 0px;
+}
+
+.cards_grid-5 {
+  background-color: #0C0916;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 280px;
+}
+
+.article_card-5 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_flex_header-5 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.article_flex_text-5 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.cards_grid-6 {
+  background-color: #0C0C0C;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 280px;
+}
+
+.article_card-6 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_flex_header-6 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.article_flex_text-6 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  margin-left: 23px;
+  margin-right: 18px;
+}
+
+.cards_grid-7 {
+  background-color: #0C0C0C;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 280px;
+}
+
+.article_card-7 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_flex_header-7 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.article_flex_text-7 {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  margin-left: 23px;
+  margin-right: 18px;
+}
