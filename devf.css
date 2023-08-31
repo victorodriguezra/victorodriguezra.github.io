@@ -32,14 +32,19 @@
     line-height: normal;
     font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
     margin: 0px;
-    display: flex;
+    display: none;
     gap: 20px;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    
+}
+
+@media screen and (min-width:1000px) {
+  .navegador_flex_sections {
+    display: flex!important;
+  }
 }
 
 .navegador_flex_buttons {
@@ -141,10 +146,11 @@
   margin-left: 100px;
   font-size: 16px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+  margin-right: 100px;
 }
 
 .coursecard {
-  height: 220px;
   border-radius: 8px;
   margin-left: 100px;
   margin-right:100px;
@@ -162,7 +168,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .coursecard_content_header {
@@ -198,6 +206,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-shrink: 1;
 }
 
 .coursecard_content_stats_cuestionarios {
@@ -209,6 +218,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-shrink: 1;
+
 }
 
 .cards_grid {
@@ -222,6 +233,12 @@
   column-gap: 60px;
   row-gap: 30px;
   margin-top: 50px;
+}
+
+@media screen and (max-width:700px) {
+  .cards_grid {
+    grid-template-columns: repeat(1,1fr); 
+  }
 }
 
 .cards_grid-1 {
@@ -548,4 +565,126 @@
   color: white;
   margin-left: 23px;
   margin-right: 18px;
+}
+
+.calendario {
+  border-radius: 8px;
+  background-color: #0C0C0C;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+
+.calendario_header {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.calendario_grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 15px;
+
+}
+
+
+@media screen and (max-width:1000px) {
+  .calendario_grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width:470px) {
+  .calendario_grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+  
+.calendario_grid_item{
+  min-height: 160px!important;
+  border-radius: 4px;
+  padding: 15px 15px 10px;
+  background-color: #242433;
+
+}
+
+.calendario_grid_item-done {
+  background-color: #5136AD !important;
+}
+
+.calendario_grid_item_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+}
+
+.calendario_grid_item_flex_small {
+  color: white;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+}
+
+.calendario_grid_item_flex_p {
+  color: white;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+}
+
+.temario {
+  border-radius: 8px;
+  background-color: #0C0C0C;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+
+.temario_header {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  margin-top: 5px;
+}
+
+.temario_carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 20px;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.temario_carrousel_item{
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 200px;
+  min-height: 300px;
+  background-color: white;
+}
+
+.temario_carrousel_item_text {
+  color: black;
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.3px;
 }
