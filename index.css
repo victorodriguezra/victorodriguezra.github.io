@@ -3,7 +3,7 @@
   src: url(assets/epilogue/Epilogue-VariableFont_wght.ttf);
 }
 
-.navegador {
+.browser {
   display: flex;
   background-color: #5136AD;
   
@@ -12,13 +12,13 @@
   width: 100%;
 }
 
-.navegador_flex_left {
+.browser_flex_left {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.navegador_flex_sections {
+.browser_flex_sections {
     font-weight: 700;
     font-size: 12px;
     color: white;
@@ -36,12 +36,12 @@
 }
 
 @media screen and (min-width:1000px) {
-  .navegador_flex_sections {
+  .browser_flex_sections {
     display: flex!important;
   }
 }
 
-.navegador_flex_buttons {
+.browser_flex_buttons {
   display: flex;
   gap: 10px;
   margin-right: 40px;
@@ -49,49 +49,49 @@
 
 @media screen and (max-width:550px) {
   
-  .navegador_flex_logo {
+  .browser_flex_logo {
     width: auto!important;
   }
 
-  .navegador_flex_discord {
+  .browser_flex_discord {
     width: auto!important;
   }
 
-  .navegador_flex_clase {
+  .browser_flex_clase {
     width: auto!important;
   }
 
-  .navegador_flex_notificaciones {
+  .browser_flex_notificaciones {
     width: auto!important;
   }
 }
 
 @media screen and (max-width:430px) {
-  .navegador_flex_buttons {
+  .browser_flex_buttons {
     display: grid!important;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     gap: 0px!important;
   }
   
-  .navegador_flex_logo {
+  .browser_flex_logo {
     width: auto!important;
   }
 
-  .navegador_flex_discord {
+  .browser_flex_discord {
     width: auto!important;
   }
 
-  .navegador_flex_clase {
+  .browser_flex_clase {
     width: auto!important;
   }
 
-  .navegador_flex_notificaciones {
+  .browser_flex_notificaciones {
     width: auto!important;
   }
 }
 
-.navegador_flex_logo {
+.browser_flex_logo {
   background-color: #432D8C;
   border-radius: 20px;
   border: 0px;
@@ -104,7 +104,7 @@
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
 }
 
-.navegador_flex_discord {
+.browser_flex_discord {
   border-radius: 8px;
   background-color: #5865F2;
   border: 0px;
@@ -117,7 +117,7 @@
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
 }
 
-.navegador_flex_clase {
+.browser_flex_clase {
   border-radius: 8px;
   background-color: #2D8CFF;
   border: 0px;
@@ -135,7 +135,7 @@
 }
 
 
-.navegador_flex_notificaciones {
+.browser_flex_notificaciones {
   width: 20px;
   border: 0px;
   padding: 5px;
@@ -664,12 +664,10 @@
   }
 }
   
-.calendario_grid_item{
-  min-height: 160px!important;
+.calendario_grid_item {
   border-radius: 4px;
   padding: 15px 15px 10px;
   background-color: #242433;
-
 }
 
 .calendario_grid_item-done {
